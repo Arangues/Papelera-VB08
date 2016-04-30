@@ -22,11 +22,11 @@ Partial Class frm_menu
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ArticulosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
+        Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.FacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ArticulosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '

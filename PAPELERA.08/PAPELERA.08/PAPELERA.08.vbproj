@@ -68,17 +68,16 @@
   <ItemGroup>
     <Compile Include="Class- frm\Class_Articulos.vb" />
     <Compile Include="Class- frm\Class_CLIENTE.vb" />
-    <Compile Include="Class- frm\Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Class- frm\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Class- frm\frm_CLIENTE.designer.vb">
       <DependentUpon>frm_CLIENTE.vb</DependentUpon>
     </Compile>
     <Compile Include="Class- frm\frm_CLIENTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\List_FACTURA.Designer.vb">
+      <DependentUpon>List_FACTURA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="List\List_FACTURA.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="List\List_ARTICULO.designer.vb">
@@ -99,7 +98,7 @@
     <Compile Include="List\MENU.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="List\Metodos.vb" />
+    <Compile Include="Metodos.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -120,6 +119,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Class- frm\frm_CLIENTE.resx">
       <DependentUpon>frm_CLIENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\List_FACTURA.resx">
+      <DependentUpon>List_FACTURA.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List\List_ARTICULO.resx">
       <DependentUpon>List_ARTICULO.vb</DependentUpon>

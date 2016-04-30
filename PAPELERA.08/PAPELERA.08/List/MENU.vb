@@ -14,4 +14,8 @@
     Private Sub ArticulosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ArticulosToolStripMenuItem.Click
         frm_ARTICULO.Show()
     End Sub
+
+    Private Sub FacturasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FacturasToolStripMenuItem.Click
+        frm_Factura.Show()
+    End Sub
 End Class

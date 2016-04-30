@@ -22,36 +22,36 @@ Partial Class frm_ARTICULO
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.dvg_ARTICULOS = New System.Windows.Forms.DataGridView()
-        Me.cmb_agregar = New System.Windows.Forms.Button()
-        Me.cmb_Eliminar = New System.Windows.Forms.Button()
-        Me.cmb_modificar = New System.Windows.Forms.Button()
-        Me.txt_COD_BARRAS = New System.Windows.Forms.TextBox()
-        Me.comb_CF_CATEGORIA = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txt_NOMBRE = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_PRECIO_UNITARIO = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txt_PRECIO_VENTA = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txt_STOCK = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txt_STOCK_MIN = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txt_STOCK_MAX = New System.Windows.Forms.TextBox()
-        Me.txt_buscar_nombre = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TXT_BUSCAR_CODIGO = New System.Windows.Forms.TextBox()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.txt_id = New System.Windows.Forms.TextBox()
-        Me.Funsiones = New System.Windows.Forms.GroupBox()
-        Me.Limpiar = New System.Windows.Forms.Button()
+        Me.dvg_ARTICULOS = New System.Windows.Forms.DataGridView
+        Me.cmb_agregar = New System.Windows.Forms.Button
+        Me.cmb_Eliminar = New System.Windows.Forms.Button
+        Me.cmb_modificar = New System.Windows.Forms.Button
+        Me.txt_COD_BARRAS = New System.Windows.Forms.TextBox
+        Me.comb_CF_CATEGORIA = New System.Windows.Forms.ComboBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.txt_NOMBRE = New System.Windows.Forms.TextBox
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.txt_PRECIO_UNITARIO = New System.Windows.Forms.TextBox
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.txt_PRECIO_VENTA = New System.Windows.Forms.TextBox
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.txt_STOCK = New System.Windows.Forms.TextBox
+        Me.Label7 = New System.Windows.Forms.Label
+        Me.txt_STOCK_MIN = New System.Windows.Forms.TextBox
+        Me.Label8 = New System.Windows.Forms.Label
+        Me.txt_STOCK_MAX = New System.Windows.Forms.TextBox
+        Me.txt_buscar_nombre = New System.Windows.Forms.TextBox
+        Me.Label9 = New System.Windows.Forms.Label
+        Me.Label10 = New System.Windows.Forms.Label
+        Me.TXT_BUSCAR_CODIGO = New System.Windows.Forms.TextBox
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.Label11 = New System.Windows.Forms.Label
+        Me.txt_id = New System.Windows.Forms.TextBox
+        Me.Funsiones = New System.Windows.Forms.GroupBox
+        Me.Limpiar = New System.Windows.Forms.Button
         CType(Me.dvg_ARTICULOS, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.Funsiones.SuspendLayout()
