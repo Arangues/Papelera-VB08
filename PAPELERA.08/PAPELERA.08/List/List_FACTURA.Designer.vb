@@ -23,17 +23,19 @@ Partial Class frm_Factura
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.dgv_detalles = New System.Windows.Forms.DataGridView
+        Me.Codigo = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Precio = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.Subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.dgv_facturas_prod = New System.Windows.Forms.DataGridView
         Me.Label1 = New System.Windows.Forms.Label
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
         Me.txt_codigo_art = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
         Me.txt_preciov_art = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
         Me.txt_nombre_art = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
         Me.TextBox8 = New System.Windows.Forms.TextBox
         Me.Label8 = New System.Windows.Forms.Label
         Me.TextBox9 = New System.Windows.Forms.TextBox
@@ -43,19 +45,23 @@ Partial Class frm_Factura
         Me.Label11 = New System.Windows.Forms.Label
         Me.txt_buscar_nombre = New System.Windows.Forms.TextBox
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Label5 = New System.Windows.Forms.Label
+        Me.cmb_Agregar = New System.Windows.Forms.Button
         Me.txt_cantidad = New System.Windows.Forms.TextBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
-        Me.TextBox7 = New System.Windows.Forms.TextBox
+        Me.txt_pago_con = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
         Me.Label12 = New System.Windows.Forms.Label
-        Me.TextBox10 = New System.Windows.Forms.TextBox
-        Me.TextBox11 = New System.Windows.Forms.TextBox
+        Me.txt_vuelto = New System.Windows.Forms.TextBox
+        Me.txt_Pagar = New System.Windows.Forms.TextBox
         Me.Label13 = New System.Windows.Forms.Label
         Me.Button1 = New System.Windows.Forms.Button
+        Me.cmb_Eliminar = New System.Windows.Forms.Button
+        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label4 = New System.Windows.Forms.Label
+        Me.Label5 = New System.Windows.Forms.Label
+        Me.Label6 = New System.Windows.Forms.Label
         CType(Me.dgv_detalles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv_facturas_prod, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -67,11 +73,42 @@ Partial Class frm_Factura
         'dgv_detalles
         '
         Me.dgv_detalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_detalles.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Codigo, Me.Nombre, Me.Precio, Me.Cantidad, Me.Subtotal})
         Me.dgv_detalles.Location = New System.Drawing.Point(10, 19)
         Me.dgv_detalles.Name = "dgv_detalles"
         Me.dgv_detalles.ReadOnly = True
         Me.dgv_detalles.Size = New System.Drawing.Size(576, 228)
         Me.dgv_detalles.TabIndex = 0
+        '
+        'Codigo
+        '
+        Me.Codigo.HeaderText = "codigo"
+        Me.Codigo.Name = "Codigo"
+        Me.Codigo.ReadOnly = True
+        '
+        'Nombre
+        '
+        Me.Nombre.HeaderText = "Nombre"
+        Me.Nombre.Name = "Nombre"
+        Me.Nombre.ReadOnly = True
+        '
+        'Precio
+        '
+        Me.Precio.HeaderText = "Precio"
+        Me.Precio.Name = "Precio"
+        Me.Precio.ReadOnly = True
+        '
+        'Cantidad
+        '
+        Me.Cantidad.HeaderText = "Cantidad"
+        Me.Cantidad.Name = "Cantidad"
+        Me.Cantidad.ReadOnly = True
+        '
+        'Subtotal
+        '
+        Me.Subtotal.HeaderText = "Subtotal"
+        Me.Subtotal.Name = "Subtotal"
+        Me.Subtotal.ReadOnly = True
         '
         'dgv_facturas_prod
         '
@@ -85,6 +122,7 @@ Partial Class frm_Factura
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(8, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 13)
@@ -108,6 +146,7 @@ Partial Class frm_Factura
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(21, 49)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 13)
@@ -116,54 +155,33 @@ Partial Class frm_Factura
         '
         'txt_codigo_art
         '
+        Me.txt_codigo_art.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_codigo_art.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_codigo_art.Location = New System.Drawing.Point(70, 29)
         Me.txt_codigo_art.Name = "txt_codigo_art"
-        Me.txt_codigo_art.Size = New System.Drawing.Size(100, 20)
+        Me.txt_codigo_art.ReadOnly = True
+        Me.txt_codigo_art.Size = New System.Drawing.Size(160, 23)
         Me.txt_codigo_art.TabIndex = 7
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(16, 32)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 15)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Codigo"
         '
         'txt_preciov_art
         '
+        Me.txt_preciov_art.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_preciov_art.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_preciov_art.Location = New System.Drawing.Point(70, 81)
         Me.txt_preciov_art.Name = "txt_preciov_art"
-        Me.txt_preciov_art.Size = New System.Drawing.Size(100, 20)
+        Me.txt_preciov_art.ReadOnly = True
+        Me.txt_preciov_art.Size = New System.Drawing.Size(160, 23)
         Me.txt_preciov_art.TabIndex = 13
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(16, 84)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 15)
-        Me.Label4.TabIndex = 12
-        Me.Label4.Text = "Precio"
         '
         'txt_nombre_art
         '
+        Me.txt_nombre_art.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txt_nombre_art.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_nombre_art.Location = New System.Drawing.Point(70, 55)
         Me.txt_nombre_art.Name = "txt_nombre_art"
-        Me.txt_nombre_art.Size = New System.Drawing.Size(100, 20)
+        Me.txt_nombre_art.ReadOnly = True
+        Me.txt_nombre_art.Size = New System.Drawing.Size(160, 23)
         Me.txt_nombre_art.TabIndex = 9
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label6.Location = New System.Drawing.Point(16, 58)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(46, 15)
-        Me.Label6.TabIndex = 8
-        Me.Label6.Text = "Nombre"
         '
         'TextBox8
         '
@@ -175,6 +193,7 @@ Partial Class frm_Factura
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label8.Location = New System.Drawing.Point(17, 48)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(58, 13)
@@ -191,6 +210,7 @@ Partial Class frm_Factura
         'Label9
         '
         Me.Label9.AutoSize = True
+        Me.Label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label9.Location = New System.Drawing.Point(17, 22)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(37, 13)
@@ -235,15 +255,17 @@ Partial Class frm_Factura
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.txt_cantidad)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.txt_codigo_art)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.txt_nombre_art)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.cmb_Eliminar)
+        Me.GroupBox1.Controls.Add(Me.cmb_Agregar)
+        Me.GroupBox1.Controls.Add(Me.txt_cantidad)
+        Me.GroupBox1.Controls.Add(Me.txt_codigo_art)
+        Me.GroupBox1.Controls.Add(Me.txt_nombre_art)
         Me.GroupBox1.Controls.Add(Me.txt_preciov_art)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(352, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(236, 195)
@@ -251,31 +273,23 @@ Partial Class frm_Factura
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Articulos"
         '
-        'Button2
+        'cmb_Agregar
         '
-        Me.Button2.Location = New System.Drawing.Point(70, 146)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Agregar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Location = New System.Drawing.Point(7, 113)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 15)
-        Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Cantidad"
+        Me.cmb_Agregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.cmb_Agregar.Location = New System.Drawing.Point(33, 156)
+        Me.cmb_Agregar.Name = "cmb_Agregar"
+        Me.cmb_Agregar.Size = New System.Drawing.Size(75, 23)
+        Me.cmb_Agregar.TabIndex = 16
+        Me.cmb_Agregar.Text = "Agregar"
+        Me.cmb_Agregar.UseVisualStyleBackColor = True
         '
         'txt_cantidad
         '
         Me.txt_cantidad.BackColor = System.Drawing.Color.AntiqueWhite
+        Me.txt_cantidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txt_cantidad.Location = New System.Drawing.Point(70, 110)
         Me.txt_cantidad.Name = "txt_cantidad"
-        Me.txt_cantidad.Size = New System.Drawing.Size(100, 20)
+        Me.txt_cantidad.Size = New System.Drawing.Size(160, 23)
         Me.txt_cantidad.TabIndex = 15
         '
         'GroupBox2
@@ -284,6 +298,7 @@ Partial Class frm_Factura
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox2.Location = New System.Drawing.Point(12, 119)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(334, 88)
@@ -297,6 +312,7 @@ Partial Class frm_Factura
         Me.GroupBox3.Controls.Add(Me.Label8)
         Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Controls.Add(Me.TextBox8)
+        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox3.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(334, 88)
@@ -314,12 +330,12 @@ Partial Class frm_Factura
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Detalle factura"
         '
-        'TextBox7
+        'txt_pago_con
         '
-        Me.TextBox7.Location = New System.Drawing.Point(673, 315)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox7.TabIndex = 36
+        Me.txt_pago_con.Location = New System.Drawing.Point(673, 315)
+        Me.txt_pago_con.Name = "txt_pago_con"
+        Me.txt_pago_con.Size = New System.Drawing.Size(100, 20)
+        Me.txt_pago_con.TabIndex = 36
         '
         'Label7
         '
@@ -339,30 +355,34 @@ Partial Class frm_Factura
         Me.Label12.TabIndex = 35
         Me.Label12.Text = "Pagon con"
         '
-        'TextBox10
+        'txt_vuelto
         '
-        Me.TextBox10.Location = New System.Drawing.Point(848, 315)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox10.TabIndex = 38
+        Me.txt_vuelto.Location = New System.Drawing.Point(848, 315)
+        Me.txt_vuelto.Name = "txt_vuelto"
+        Me.txt_vuelto.Size = New System.Drawing.Size(100, 20)
+        Me.txt_vuelto.TabIndex = 38
         '
-        'TextBox11
+        'txt_Pagar
         '
-        Me.TextBox11.Location = New System.Drawing.Point(681, 358)
-        Me.TextBox11.Multiline = True
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(158, 39)
-        Me.TextBox11.TabIndex = 40
+        Me.txt_Pagar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txt_Pagar.Font = New System.Drawing.Font("Impact", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_Pagar.Location = New System.Drawing.Point(792, 365)
+        Me.txt_Pagar.Multiline = True
+        Me.txt_Pagar.Name = "txt_Pagar"
+        Me.txt_Pagar.Size = New System.Drawing.Size(108, 39)
+        Me.txt_Pagar.TabIndex = 40
+        Me.txt_Pagar.Text = "0,00"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Cursor = System.Windows.Forms.Cursors.No
-        Me.Label13.Location = New System.Drawing.Point(606, 372)
+        Me.Label13.Font = New System.Drawing.Font("Impact", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(610, 370)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(69, 13)
+        Me.Label13.Size = New System.Drawing.Size(176, 34)
         Me.Label13.TabIndex = 39
-        Me.Label13.Text = "Neto a pagar"
+        Me.Label13.Text = "Neto a pagar $"
         '
         'Button1
         '
@@ -373,18 +393,69 @@ Partial Class frm_Factura
         Me.Button1.Text = "Cobrar"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'cmb_Eliminar
+        '
+        Me.cmb_Eliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.cmb_Eliminar.Location = New System.Drawing.Point(114, 156)
+        Me.cmb_Eliminar.Name = "cmb_Eliminar"
+        Me.cmb_Eliminar.Size = New System.Drawing.Size(75, 23)
+        Me.cmb_Eliminar.TabIndex = 17
+        Me.cmb_Eliminar.Text = "Eliminar"
+        Me.cmb_Eliminar.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label3.Location = New System.Drawing.Point(24, 33)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(40, 13)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Codigo"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label4.Location = New System.Drawing.Point(20, 58)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 13)
+        Me.Label4.TabIndex = 19
+        Me.Label4.Text = "Nombre"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label5.Location = New System.Drawing.Point(27, 84)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(37, 13)
+        Me.Label5.TabIndex = 20
+        Me.Label5.Text = "Precio"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label6.Location = New System.Drawing.Point(20, 113)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(49, 13)
+        Me.Label6.TabIndex = 21
+        Me.Label6.Text = "Cantidad"
+        '
         'frm_Factura
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(961, 598)
+        Me.BackColor = System.Drawing.Color.Lavender
+        Me.ClientSize = New System.Drawing.Size(961, 480)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox11)
+        Me.Controls.Add(Me.txt_Pagar)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.txt_pago_con)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.txt_vuelto)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -416,11 +487,8 @@ Partial Class frm_Factura
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents txt_codigo_art As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txt_preciov_art As System.Windows.Forms.TextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txt_nombre_art As System.Windows.Forms.TextBox
-    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
@@ -431,16 +499,25 @@ Partial Class frm_Factura
     Friend WithEvents txt_buscar_nombre As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents txt_cantidad As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_pago_con As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents txt_vuelto As System.Windows.Forms.TextBox
+    Friend WithEvents txt_Pagar As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents cmb_Agregar As System.Windows.Forms.Button
+    Friend WithEvents Codigo As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Nombre As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Precio As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Cantidad As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Subtotal As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents cmb_Eliminar As System.Windows.Forms.Button
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
