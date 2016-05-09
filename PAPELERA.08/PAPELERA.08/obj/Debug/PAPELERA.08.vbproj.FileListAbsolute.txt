@@ -1,3 +1,4 @@
+<<<<<<< .mine
 C:\Users\Sergio\AppData\Local\Temporary Projects\PAPELERA.08\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Sergio\AppData\Local\Temporary Projects\PAPELERA.08\obj\Debug\PAPELERA._08.frm_CLIENTE.resources
 C:\Users\Sergio\AppData\Local\Temporary Projects\PAPELERA.08\obj\Debug\PAPELERA._08.frm_ARTICULO.resources
@@ -14,6 +15,11 @@ C:\Users\Sergio\AppData\Local\Temporary Projects\PAPELERA.08\obj\Debug\PAPELERA.
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.exe
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.xml
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.pdb
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.exe
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.xml
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.pdb
+||||||| .r2
+=======
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.exe
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.pdb
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.xml
@@ -25,3 +31,15 @@ C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.Resources.resources
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.vbproj.GenerateResource.Cache
 C:\Users\Sergio\Documents\GitHub\Papelera-VB08\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_Factura.resources
+>>>>>>> .r3
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.exe
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.pdb
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.xml
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_CLIENTE.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_Factura.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_ARTICULO.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.List_CLIENTE.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_menu.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.Resources.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.vbproj.GenerateResource.Cache

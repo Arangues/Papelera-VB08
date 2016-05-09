@@ -22,6 +22,7 @@ Partial Class frm_menu
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_menu))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.FacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -76,6 +77,7 @@ Partial Class frm_menu
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(671, 399)
         Me.Controls.Add(Me.MenuStrip1)

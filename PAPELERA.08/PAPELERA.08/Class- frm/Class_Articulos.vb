@@ -134,9 +134,10 @@ Public Class Class_Articulos
 
     Public Sub Modificar(ByVal articulos As Class_Articulos)
         Try
-            Class_Conexion.objConexion.Close()
+            Class_Conexion.objConexion.Open()
             Dim objComando As New SqlCommand("Pa_modificarArticulos", Class_Conexion.objConexion)
             objComando.CommandType = CommandType.StoredProcedure
+            objComando.Parameters.AddWithValue("@id", articulos.id)
             objComando.Parameters.AddWithValue("@codigo", articulos.codigo)
             objComando.Parameters.AddWithValue("@nombre", articulos.nombre)
             objComando.Parameters.AddWithValue("@categoria", articulos.categoria)

@@ -94,6 +94,7 @@ Public Class frm_ARTICULO
             Exit Sub
         Else
             Dim pregunta As DialogResult = MsgBox("¿ Desea realizar las moficaciones al articulo n°" & " " & CStr(txt_id.Text) & " ?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Modificar registro")
+            Class_Articulo.id = txt_id.Text
             Class_Articulo.codigo = txt_COD_BARRAS.Text
             Class_Articulo.nombre = txt_NOMBRE.Text
             Class_Articulo.categoria = comb_CF_CATEGORIA.Text
@@ -102,7 +103,7 @@ Public Class frm_ARTICULO
             Class_Articulo.stock = txt_STOCK.Text
             Class_Articulo.stock_min = txt_STOCK_MIN.Text
             Class_Articulo.stock_max = txt_STOCK_MAX.Text
-            articulo.Insertar(articulo)
+            articulo.Modificar(articulo)
             articulo.consultarTodos(dvg_ARTICULOS)
             borrar.limpiar_TextBox(Me)
             Class_conexion.objConexion.Close()
