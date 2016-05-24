@@ -51,16 +51,21 @@ Public Class Class_CLIENTE
     End Property
     ' creamos un metodo para llenar un DataGridView
     Public Sub consultarTodos(ByVal tabla As DataGridView)
-        'creamos un obj de tipo SqlCommand (" texto de consulta , la conexion de la clase conexion )
-        Dim objComando As New SqlCommand("PCONSULTACLIENTE", Class_Conexion.objConexion)
-        objComando.CommandType = CommandType.StoredProcedure ' ejcuta el preocedimiento almacenado de sql
-        Dim objDataTable As New Data.DataTable 'instanciamos un obj de tipo SqlDataAdapter
-        Dim objDataAdapter As New SqlDataAdapter(objComando) ' instanciamos un obj de tipo  SqlDataAdapter 
-        '(donde se le asigna  un procedimiento almacenado
-        class_Conexion.objConexion.Open()
-        objDataAdapter.Fill(objDataTable) 'llenamos al DataTable con registros
-        tabla.DataSource = objDataTable ' los registro del DataTable se muestran en la tabla con el DataSource
-        Class_Conexion.objConexion.Close() ' Cierro la conexion 
+        Try
+            'creamos un obj de tipo SqlCommand (" texto de consulta , la conexion de la clase conexion )
+            Dim objComando As New SqlCommand("PCONSULTACLIENTE", Class_Conexion.objConexion)
+            objComando.CommandType = CommandType.StoredProcedure ' ejcuta el preocedimiento almacenado de sql
+            Dim objDataTable As New Data.DataTable 'instanciamos un obj de tipo SqlDataAdapter
+            Dim objDataAdapter As New SqlDataAdapter(objComando) ' instanciamos un obj de tipo  SqlDataAdapter 
+            '(donde se le asigna  un procedimiento almacenado
+            Class_Conexion.objConexion.Open()
+            objDataAdapter.Fill(objDataTable) 'llenamos al DataTable con registros
+            tabla.DataSource = objDataTable ' los registro del DataTable se muestran en la tabla con el DataSource
+            Class_Conexion.objConexion.Close() ' Cierro la conexion 
+        Catch ex As Exception
+
+        End Try
+        
 
     End Sub
 

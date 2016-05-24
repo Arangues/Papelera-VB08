@@ -2,6 +2,7 @@
 Imports System.Windows.Forms
 Public Class frm_Factura
     Dim Class_Conexion As New Class_Conexion
+    Dim eliminar_tect As New Metodos
     Private Sub frm_Factura_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim Class_Conexion As New Class_Conexion
 
@@ -14,9 +15,17 @@ Public Class frm_Factura
     End Sub
 
     Private Sub dgv_facturas_prod_CellClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_facturas_prod.CellClick
-        txt_codigo_art.Text = dgv_facturas_prod.Item("COD_BARRAS", dgv_facturas_prod.CurrentRow.Index).Value
-        txt_nombre_art.Text = dgv_facturas_prod.Item("NOMBRE", dgv_facturas_prod.CurrentRow.Index).Value
-        txt_preciov_art.Text = dgv_facturas_prod.Item("PRECIO_VENTA", dgv_facturas_prod.CurrentRow.Index).Value
+        Try
+            txt_codigo_art.Text = dgv_facturas_prod.Item("COD_BARRAS", dgv_facturas_prod.CurrentRow.Index).Value
+            txt_nombre_art.Text = dgv_facturas_prod.Item("NOMBRE", dgv_facturas_prod.CurrentRow.Index).Value
+            txt_preciov_art.Text = dgv_facturas_prod.Item("PRECIO_VENTA", dgv_facturas_prod.CurrentRow.Index).Value
+            txt_codigo_art.Text = dgv_facturas_prod.Item("COD_BARRAS", dgv_facturas_prod.CurrentRow.Index).Value
+
+
+        Catch ex As Exception
+
+        End Try
+        
     End Sub
     Private Sub txt_buscar_nombre_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txt_buscar_nombre.TextChanged
         Dim buscar As New SqlDataAdapter("select * from ARTICULOS where NOMBRE like '%" + txt_buscar_nombre.Text + "%'", Class_Conexion.objConexion)
@@ -70,4 +79,39 @@ Public Class frm_Factura
             txt_vuelto.Text = Val(txt_pago_con.Text) - Val(txt_Pagar.Text)
         End If
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmb_Cobrar.Click
+
+
+        Dim agregar As SqlCommand = New SqlCommand("insert into DETALLE values (@COD_BARRAS,@NOMBRE,@PRECIO,@CANTIDAD,@TOTAL)", Class_Conexion.objConexion)
+
+        Dim fila As DataGridViewRow = New DataGridViewRow()
+        Try
+
+            For Each fila In dgv_detalles.Rows
+                agregar.Parameters.Clear()
+                agregar.Parameters.AddWithValue("@COD_BARRAS", Convert.ToInt32(fila.Cells("Codigo").Value))
+                agregar.Parameters.AddWithValue("@NOMBRE", Convert.ToString(fila.Cells("Nombre").Value))
+                agregar.Parameters.AddWithValue("@PRECIO", Convert.ToDecimal(fila.Cells("Precio").Value))
+                agregar.Parameters.AddWithValue("@CANTIDAD", Convert.ToInt32(fila.Cells("Cantidad").Value))
+                agregar.Parameters.AddWithValue("@TOTAL", Convert.ToDecimal(txt_Pagar.Text))
+
+
+                Class_Conexion.objConexion.Open()
+                agregar.ExecuteNonQuery()
+                Class_Conexion.objConexion.Close()
+
+            Next
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+        eliminar_tect.limpiar_TextBox(Me)
+        eliminar_tect.LimpiarGroupBox(Me.GroupBox1)
+        eliminar_tect.LimpiarGroupBox(Me.GroupBox2)
+        eliminar_tect.LimpiarGroupBox(Me.GroupBox3)
+        eliminar_tect.LimpiarGroupBox(Me.GroupBox4)
+        dgv_detalles.Rows.Clear()
+    End Sub
+
+  
 End Class

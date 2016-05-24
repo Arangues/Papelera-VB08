@@ -2,7 +2,7 @@
     Dim CLASS_CONEXION As New Class_Conexion
     Private Sub MENU_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         CLASS_CONEXION.conectar()
-        CLASS_CONEXION.objConexion.Close()
+
 
 
     End Sub
@@ -17,5 +17,6 @@
 
     Private Sub FacturasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FacturasToolStripMenuItem.Click
         frm_Factura.Show()
+        CLASS_CONEXION.objConexion.Close()
     End Sub
 End Class

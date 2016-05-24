@@ -15,7 +15,7 @@ Public Class Class_Conexion
         Try
             objConexion.Open()
 
-            ' ABRIMOS LA CONEXION Y SI ES EXITOSA SALE UN MESAJE DE CONECTADO
+
         Catch ex As Exception
             MessageBox.Show("ERROR DE CONEXION") 'SI NO SE CONECTA SALE UN MENSAJE DE ERROR
         Finally

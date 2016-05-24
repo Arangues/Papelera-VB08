@@ -14,8 +14,17 @@
                 Control.Text = ""
             End If
         Next
+
     End Sub
 
-
+    Public Sub LimpiarGroupBox(ByVal Grupo As Windows.Forms.GroupBox)
+        Dim miControl As Object
+        For Each miControl In Grupo.Controls
+            If miControl.GetType Is GetType(System.Windows.Forms.TextBox) Then
+                miControl.Clear()
+            End If
+            System.Windows.Forms.Application.DoEvents()
+        Next
+    End Sub
 
 End Class
