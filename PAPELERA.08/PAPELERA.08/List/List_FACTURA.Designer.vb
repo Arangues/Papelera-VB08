@@ -351,7 +351,7 @@ Partial Class frm_Factura
         'cmb_Agregar
         '
         Me.cmb_Agregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.cmb_Agregar.Location = New System.Drawing.Point(698, 232)
+        Me.cmb_Agregar.Location = New System.Drawing.Point(40, 156)
         Me.cmb_Agregar.Name = "cmb_Agregar"
         Me.cmb_Agregar.Size = New System.Drawing.Size(75, 23)
         Me.cmb_Agregar.TabIndex = 16
@@ -361,7 +361,7 @@ Partial Class frm_Factura
         'cmb_Eliminar
         '
         Me.cmb_Eliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.cmb_Eliminar.Location = New System.Drawing.Point(779, 232)
+        Me.cmb_Eliminar.Location = New System.Drawing.Point(121, 156)
         Me.cmb_Eliminar.Name = "cmb_Eliminar"
         Me.cmb_Eliminar.Size = New System.Drawing.Size(75, 23)
         Me.cmb_Eliminar.TabIndex = 17
@@ -414,7 +414,9 @@ Partial Class frm_Factura
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.cmb_Eliminar)
         Me.GroupBox1.Controls.Add(Me.txt_cantidad)
+        Me.GroupBox1.Controls.Add(Me.cmb_Agregar)
         Me.GroupBox1.Controls.Add(Me.txt_codigo_art)
         Me.GroupBox1.Controls.Add(Me.txt_nombre_art)
         Me.GroupBox1.Controls.Add(Me.txt_preciov_art)
@@ -446,9 +448,7 @@ Partial Class frm_Factura
         Me.Controls.Add(Me.txt_Pagar)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.txt_pago_con)
-        Me.Controls.Add(Me.cmb_Eliminar)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.cmb_Agregar)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.txt_vuelto)
         Me.Controls.Add(Me.GroupBox4)

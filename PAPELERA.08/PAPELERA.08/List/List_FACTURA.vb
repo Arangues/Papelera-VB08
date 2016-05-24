@@ -84,7 +84,7 @@ Public Class frm_Factura
 
 
         Dim agregar As SqlCommand = New SqlCommand("insert into DETALLE values (@COD_BARRAS,@NOMBRE,@PRECIO,@CANTIDAD,@TOTAL)", Class_Conexion.objConexion)
-
+        Dim pregunta As DialogResult = MsgBox("Esta Seguro de generar una nueva factura?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "registro")
         Dim fila As DataGridViewRow = New DataGridViewRow()
         Try
 
