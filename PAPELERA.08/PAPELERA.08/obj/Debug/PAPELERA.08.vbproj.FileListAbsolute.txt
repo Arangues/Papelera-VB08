@@ -43,3 +43,19 @@ C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debu
 C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_menu.resources
 C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.Resources.resources
 C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.vbproj.GenerateResource.Cache
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frmProveedor.resources
+C:\Users\Sergio\Desktop\Papelera-VB08.git\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.lstProveedor.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.exe
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.xml
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.pdb
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.exe
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.pdb
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\bin\Debug\PAPELERA.08.xml
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_CLIENTE.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_Factura.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_ARTICULO.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.List_CLIENTE.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.frm_menu.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA._08.Resources.resources
+C:\Users\Sergio\Desktop\Papelera utima\trunk\PAPELERA.08\PAPELERA.08\obj\Debug\PAPELERA.08.vbproj.GenerateResource.Cache

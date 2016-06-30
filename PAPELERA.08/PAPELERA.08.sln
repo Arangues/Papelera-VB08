@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Basic Express 2008
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PAPELERA.08", "PAPELERA.08\PAPELERA.08.vbproj", "{C7312DB8-C6EB-46E8-A953-C222406E9CB2}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PAPELERA.TRAS", "PAPELERA.08\PAPELERA.TRAS.vbproj", "{C7312DB8-C6EB-46E8-A953-C222406E9CB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

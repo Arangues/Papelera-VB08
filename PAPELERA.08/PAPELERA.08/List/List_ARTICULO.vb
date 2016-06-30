@@ -35,6 +35,8 @@ Public Class frm_ARTICULO
 
     Private Sub frm_ARTICULO_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Class_Articulo.consultarTodos(dvg_ARTICULOS)
+       
+
     End Sub
     Private Sub txt_buscar_nombre_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txt_buscar_nombre.TextChanged
 

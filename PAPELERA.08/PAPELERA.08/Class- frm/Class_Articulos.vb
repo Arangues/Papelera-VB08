@@ -4,9 +4,9 @@ Public Class Class_Articulos
     Inherits Class_Conexion
     Dim Class_Conexion As New Class_Conexion
     Dim id_ As Integer
-    Dim codigo_ As Integer
     Dim nombre_ As String
     Dim categoria_ As String
+    Dim proveedores_ As String
     Dim precio_unitario_ As Decimal
     Dim precio_venta_ As Decimal
     Dim stock_ As Integer
@@ -19,15 +19,6 @@ Public Class Class_Articulos
         End Get
         Set(ByVal value As Integer)
             id_ = value
-        End Set
-    End Property
-
-    Public Property codigo As Integer
-        Get
-            Return codigo_
-        End Get
-        Set(ByVal value As Integer)
-            codigo_ = value
         End Set
     End Property
 
@@ -46,6 +37,14 @@ Public Class Class_Articulos
         End Get
         Set(value As String)
             categoria_ = value
+        End Set
+    End Property
+    Public Property proveedores() As String
+        Get
+            Return proveedores_
+        End Get
+        Set(ByVal value As String)
+            proveedores_ = value
         End Set
     End Property
 

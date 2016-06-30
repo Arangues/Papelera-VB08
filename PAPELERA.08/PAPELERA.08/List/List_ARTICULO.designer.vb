@@ -61,10 +61,10 @@ Partial Class frm_ARTICULO
         '
         Me.dvg_ARTICULOS.AllowUserToOrderColumns = True
         Me.dvg_ARTICULOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dvg_ARTICULOS.Location = New System.Drawing.Point(299, 56)
+        Me.dvg_ARTICULOS.Location = New System.Drawing.Point(0, 206)
         Me.dvg_ARTICULOS.Name = "dvg_ARTICULOS"
         Me.dvg_ARTICULOS.ReadOnly = True
-        Me.dvg_ARTICULOS.Size = New System.Drawing.Size(956, 265)
+        Me.dvg_ARTICULOS.Size = New System.Drawing.Size(643, 201)
         Me.dvg_ARTICULOS.TabIndex = 0
         '
         'cmb_agregar
@@ -100,7 +100,7 @@ Partial Class frm_ARTICULO
         'txt_COD_BARRAS
         '
         Me.txt_COD_BARRAS.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_COD_BARRAS.Location = New System.Drawing.Point(92, 105)
+        Me.txt_COD_BARRAS.Location = New System.Drawing.Point(87, 63)
         Me.txt_COD_BARRAS.Name = "txt_COD_BARRAS"
         Me.txt_COD_BARRAS.Size = New System.Drawing.Size(86, 20)
         Me.txt_COD_BARRAS.TabIndex = 6
@@ -108,7 +108,7 @@ Partial Class frm_ARTICULO
         'comb_CF_CATEGORIA
         '
         Me.comb_CF_CATEGORIA.FormattingEnabled = True
-        Me.comb_CF_CATEGORIA.Location = New System.Drawing.Point(92, 156)
+        Me.comb_CF_CATEGORIA.Location = New System.Drawing.Point(245, 62)
         Me.comb_CF_CATEGORIA.Name = "comb_CF_CATEGORIA"
         Me.comb_CF_CATEGORIA.Size = New System.Drawing.Size(186, 21)
         Me.comb_CF_CATEGORIA.TabIndex = 7
@@ -118,7 +118,7 @@ Partial Class frm_ARTICULO
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.Window
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.Location = New System.Drawing.Point(30, 105)
+        Me.Label1.Location = New System.Drawing.Point(25, 63)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(56, 15)
         Me.Label1.TabIndex = 8
@@ -129,7 +129,7 @@ Partial Class frm_ARTICULO
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.SystemColors.Window
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Location = New System.Drawing.Point(40, 131)
+        Me.Label2.Location = New System.Drawing.Point(193, 37)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 15)
         Me.Label2.TabIndex = 10
@@ -137,7 +137,7 @@ Partial Class frm_ARTICULO
         '
         'txt_NOMBRE
         '
-        Me.txt_NOMBRE.Location = New System.Drawing.Point(92, 131)
+        Me.txt_NOMBRE.Location = New System.Drawing.Point(245, 37)
         Me.txt_NOMBRE.Name = "txt_NOMBRE"
         Me.txt_NOMBRE.Size = New System.Drawing.Size(186, 20)
         Me.txt_NOMBRE.TabIndex = 9
@@ -147,7 +147,7 @@ Partial Class frm_ARTICULO
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.Window
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(32, 159)
+        Me.Label3.Location = New System.Drawing.Point(185, 65)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(54, 15)
         Me.Label3.TabIndex = 12
@@ -158,7 +158,7 @@ Partial Class frm_ARTICULO
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.Window
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(12, 183)
+        Me.Label4.Location = New System.Drawing.Point(437, 40)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(78, 15)
         Me.Label4.TabIndex = 14
@@ -166,7 +166,7 @@ Partial Class frm_ARTICULO
         '
         'txt_PRECIO_UNITARIO
         '
-        Me.txt_PRECIO_UNITARIO.Location = New System.Drawing.Point(92, 183)
+        Me.txt_PRECIO_UNITARIO.Location = New System.Drawing.Point(517, 40)
         Me.txt_PRECIO_UNITARIO.Name = "txt_PRECIO_UNITARIO"
         Me.txt_PRECIO_UNITARIO.Size = New System.Drawing.Size(86, 20)
         Me.txt_PRECIO_UNITARIO.TabIndex = 13
@@ -176,7 +176,7 @@ Partial Class frm_ARTICULO
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.SystemColors.Window
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Location = New System.Drawing.Point(19, 209)
+        Me.Label5.Location = New System.Drawing.Point(444, 66)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(70, 15)
         Me.Label5.TabIndex = 16
@@ -184,7 +184,7 @@ Partial Class frm_ARTICULO
         '
         'txt_PRECIO_VENTA
         '
-        Me.txt_PRECIO_VENTA.Location = New System.Drawing.Point(92, 209)
+        Me.txt_PRECIO_VENTA.Location = New System.Drawing.Point(517, 66)
         Me.txt_PRECIO_VENTA.Name = "txt_PRECIO_VENTA"
         Me.txt_PRECIO_VENTA.Size = New System.Drawing.Size(86, 20)
         Me.txt_PRECIO_VENTA.TabIndex = 15
@@ -194,7 +194,7 @@ Partial Class frm_ARTICULO
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.SystemColors.Window
         Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label6.Location = New System.Drawing.Point(49, 238)
+        Me.Label6.Location = New System.Drawing.Point(44, 92)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(37, 15)
         Me.Label6.TabIndex = 18
@@ -202,7 +202,7 @@ Partial Class frm_ARTICULO
         '
         'txt_STOCK
         '
-        Me.txt_STOCK.Location = New System.Drawing.Point(92, 235)
+        Me.txt_STOCK.Location = New System.Drawing.Point(87, 89)
         Me.txt_STOCK.Name = "txt_STOCK"
         Me.txt_STOCK.Size = New System.Drawing.Size(86, 20)
         Me.txt_STOCK.TabIndex = 17
@@ -212,7 +212,7 @@ Partial Class frm_ARTICULO
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.SystemColors.Window
         Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Location = New System.Drawing.Point(30, 261)
+        Me.Label7.Location = New System.Drawing.Point(183, 92)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(57, 15)
         Me.Label7.TabIndex = 20
@@ -220,7 +220,7 @@ Partial Class frm_ARTICULO
         '
         'txt_STOCK_MIN
         '
-        Me.txt_STOCK_MIN.Location = New System.Drawing.Point(92, 261)
+        Me.txt_STOCK_MIN.Location = New System.Drawing.Point(245, 92)
         Me.txt_STOCK_MIN.Name = "txt_STOCK_MIN"
         Me.txt_STOCK_MIN.Size = New System.Drawing.Size(86, 20)
         Me.txt_STOCK_MIN.TabIndex = 19
@@ -230,7 +230,7 @@ Partial Class frm_ARTICULO
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.SystemColors.Window
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Location = New System.Drawing.Point(30, 287)
+        Me.Label8.Location = New System.Drawing.Point(455, 95)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(60, 15)
         Me.Label8.TabIndex = 22
@@ -238,16 +238,16 @@ Partial Class frm_ARTICULO
         '
         'txt_STOCK_MAX
         '
-        Me.txt_STOCK_MAX.Location = New System.Drawing.Point(92, 287)
+        Me.txt_STOCK_MAX.Location = New System.Drawing.Point(517, 92)
         Me.txt_STOCK_MAX.Name = "txt_STOCK_MAX"
         Me.txt_STOCK_MAX.Size = New System.Drawing.Size(86, 20)
         Me.txt_STOCK_MAX.TabIndex = 21
         '
         'txt_buscar_nombre
         '
-        Me.txt_buscar_nombre.Location = New System.Drawing.Point(463, 33)
+        Me.txt_buscar_nombre.Location = New System.Drawing.Point(403, 185)
         Me.txt_buscar_nombre.Name = "txt_buscar_nombre"
-        Me.txt_buscar_nombre.Size = New System.Drawing.Size(247, 20)
+        Me.txt_buscar_nombre.Size = New System.Drawing.Size(150, 20)
         Me.txt_buscar_nombre.TabIndex = 23
         '
         'Label9
@@ -255,7 +255,7 @@ Partial Class frm_ARTICULO
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.SystemColors.Window
         Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Location = New System.Drawing.Point(359, 33)
+        Me.Label9.Location = New System.Drawing.Point(299, 188)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(98, 15)
         Me.Label9.TabIndex = 24
@@ -266,7 +266,7 @@ Partial Class frm_ARTICULO
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.SystemColors.Window
         Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label10.Location = New System.Drawing.Point(725, 33)
+        Me.Label10.Location = New System.Drawing.Point(42, 185)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(95, 15)
         Me.Label10.TabIndex = 26
@@ -274,9 +274,9 @@ Partial Class frm_ARTICULO
         '
         'TXT_BUSCAR_CODIGO
         '
-        Me.TXT_BUSCAR_CODIGO.Location = New System.Drawing.Point(826, 33)
+        Me.TXT_BUSCAR_CODIGO.Location = New System.Drawing.Point(143, 185)
         Me.TXT_BUSCAR_CODIGO.Name = "TXT_BUSCAR_CODIGO"
-        Me.TXT_BUSCAR_CODIGO.Size = New System.Drawing.Size(247, 20)
+        Me.TXT_BUSCAR_CODIGO.Size = New System.Drawing.Size(150, 20)
         Me.TXT_BUSCAR_CODIGO.TabIndex = 25
         '
         'MenuStrip1
@@ -284,7 +284,7 @@ Partial Class frm_ARTICULO
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1267, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(643, 24)
         Me.MenuStrip1.TabIndex = 27
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -299,7 +299,7 @@ Partial Class frm_ARTICULO
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.SystemColors.Window
         Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label11.Location = New System.Drawing.Point(68, 79)
+        Me.Label11.Location = New System.Drawing.Point(63, 37)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(18, 15)
         Me.Label11.TabIndex = 29
@@ -308,7 +308,7 @@ Partial Class frm_ARTICULO
         'txt_id
         '
         Me.txt_id.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_id.Location = New System.Drawing.Point(92, 79)
+        Me.txt_id.Location = New System.Drawing.Point(87, 37)
         Me.txt_id.Name = "txt_id"
         Me.txt_id.ReadOnly = True
         Me.txt_id.Size = New System.Drawing.Size(86, 20)
@@ -319,9 +319,9 @@ Partial Class frm_ARTICULO
         Me.Funsiones.Controls.Add(Me.cmb_modificar)
         Me.Funsiones.Controls.Add(Me.cmb_agregar)
         Me.Funsiones.Controls.Add(Me.cmb_Eliminar)
-        Me.Funsiones.Location = New System.Drawing.Point(12, 24)
+        Me.Funsiones.Location = New System.Drawing.Point(109, 118)
         Me.Funsiones.Name = "Funsiones"
-        Me.Funsiones.Size = New System.Drawing.Size(281, 52)
+        Me.Funsiones.Size = New System.Drawing.Size(396, 52)
         Me.Funsiones.TabIndex = 31
         Me.Funsiones.TabStop = False
         Me.Funsiones.Text = "Funsiones"
@@ -329,7 +329,7 @@ Partial Class frm_ARTICULO
         'Limpiar
         '
         Me.Limpiar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Limpiar.Location = New System.Drawing.Point(203, 299)
+        Me.Limpiar.Location = New System.Drawing.Point(407, 137)
         Me.Limpiar.Name = "Limpiar"
         Me.Limpiar.Size = New System.Drawing.Size(75, 23)
         Me.Limpiar.TabIndex = 32
@@ -342,7 +342,7 @@ Partial Class frm_ARTICULO
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(1267, 334)
+        Me.ClientSize = New System.Drawing.Size(643, 419)
         Me.Controls.Add(Me.Limpiar)
         Me.Controls.Add(Me.Funsiones)
         Me.Controls.Add(Me.Label11)
